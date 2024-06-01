@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="icon" href="../static/images/upsied.png" type="image/icon type">
+        <title>Recəppie: {% block title %} {% endblock %}</title>
+        <link href="static/styles/styles.css" rel="stylesheet"/>
+        <link href="static/styles/custom.css" rel="stylesheet"/>
+
+    </head>
+    
+    <body class="d-flex flex-column h-100 w-100" >
+        <nav class="navbar" id="mainNav">
+            <div class="container-fluid">
+                <a class="nav-link py-3 px-0 px-lg-3 rounded" href="{{ url_for('add') }}">Toevoegen</a>
+                <a class="navbar-brand" href="{{ url_for('index') }}">Rec<span class="rotate">ə</span>ppie</a>
+                <a class="nav-link py-3 px-0 px-lg-3 rounded" href="{{ url_for('search') }}">Zoeken</a>
+            </div>
+        </nav>          
+        
+        {% block main %} {% endblock %}
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    </body>
+</html>

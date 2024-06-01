@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Toevoegen
+{% endblock %}
+
+{% block main %}
+<div class="d-flex flex-column col bar h-100 justify-content-center">
+    
+    <form action="/add" method="post" class="d-flex flex-column">
+        <div class="mb-4">
+            <input autocomplete="off" autofocus class="form-control mx-auto" name="url" placeholder="URL van recept (Allerhande, hellofresh)" type="text">
+        </div>
+        
+        <!-- <select class='form-select mb-4' name="time">
+            <option value="snelle hap">Snelle hap</option>
+            <option value="gemiddeld">Gemiddeld</option>
+            <option value="indruk maken op je date">Indruk maken op je date</option>
+        </select> -->
+    
+        <button class="btn btn-primary" type="submit">Toevoegen</button>
+    </form>
+    
+    {% with messages = get_flashed_messages() %}
+    {% if messages %}
+        {% for message in messages %}
+        <p class="mt-3 text-center" style="color:white">{{ message }}</p>
+        {% endfor %}
+    {% endif %}
+    {% endwith %}
+</div>
+{% endblock %}

@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+ul.filterlist {
+    flex-direction: row;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+ul.filterlist > li > .active{
+    bs-btn-bg: var(--bs-btn-hover-bg) !important;
+}
+
+.filter_button{
+    white-space: nowrap;
+}
+
+.navbar {
+    z-index: 10;
+}
+
+.card {
+    min-width: 250px;
+    max-height: 370px;
+    margin: 0.5rem 0rem 0.5em;
+}
+
+.card-img-top {
+    height: 214px;
+    object-fit: cover;
+}
+
+body {
+    background-image: linear-gradient(55deg, rgba(47, 47, 47, 0.8) 0%, rgba(160, 160, 160, 0.5) 100%), url("../images/vegetables.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.bar {
+    min-width: 300px;
+    max-width: 450px;
+    width: 40%;
+    align-self: center;
+}

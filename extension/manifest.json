@@ -1,0 +1,20 @@
+{
+    "manifest_version": 3,
+    "name": "Recəppie",
+    "description": "Base Level Extension",
+    "version": "1.0",
+    "permissions": ["tabs"],
+    "action": {
+      "default_popup": "extension.html",
+      "default_icon": "upsied.png"
+    },
+    "content_scripts": [
+        {
+          "js": ["scripts/content.js"],
+          "matches": [
+            "https://developer.chrome.com/docs/extensions/*",
+            "https://developer.chrome.com/docs/webstore/*"
+          ]
+        }
+    ]
+  }

@@ -1,0 +1,19 @@
+<div id="results-filters">
+    {% for filter in filters %}
+            <li id="filter_btn">
+                <a href="#" class="filter_button btn btn-primary m-1" role="button" aria-pressed="true" data-filter="{{ filter }}">{{ filter }} ({{ filters.get(filter) }})</a>
+            </li>
+    {% endfor %}
+</div>
+
+<div id="candidate-cards">
+    {% for recipe in results %}
+    <div class="card m-3" style="width: 18rem;">
+        <img class="card-img-top" src="{{recipe.image}}" alt="Card image cap">
+        <div class="card-body">
+        <h5 class="card-title">{{recipe.name}}</h5>
+        <a href={{recipe.url}} class="btn btn-primary" target="_blank">Bekijk dit recept</a>
+        </div>
+    </div>
+    {% endfor %}
+</div>
