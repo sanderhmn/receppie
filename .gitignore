@@ -1,0 +1,17 @@
+.env
+
+# Ignore Python compiled files
+__pycache__/
+*.pyc
+
+# Ignore node_modules directory
+node_modules/
+
+# Ignore log files
+*.log
+
+# Ignore OS-specific files
+.DS_Store
+
+# Ignore environment variables file
+.env
