@@ -15,10 +15,14 @@ from werkzeug.security import check_password_hash, generate_password_hash
 from models import *
 from helpers import *
 
+from dotenv import load_dotenv
+load_dotenv()  # Load environment variables from.env file
+
 app = Flask(__name__)
 
 # List compatible websites for which_scraper() to check
 SUPPORTED_WEBSITES = ['allerhande', 'hellofresh']
+
 
 # Check for environment variable
 if not os.getenv("DATABASE_URL"):

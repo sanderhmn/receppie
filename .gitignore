@@ -1,3 +1,6 @@
+LOG.md
+venv/
+
 # Ignore Python compiled files
 __pycache__/
 *.pyc

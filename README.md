@@ -50,11 +50,6 @@ Componenten:
 Bronnen:
 - Allerhande, Hello Fresh
 
-#### Learning goals
-
-- Implement Flask to produce usable application
-- Learn Bootstrap 5, HTML and CSS to produce nice looking UI
-
 #### Usage for host
 
 Link Flask to postgresql
